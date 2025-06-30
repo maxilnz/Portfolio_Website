@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Maximilian Linz</title>
+        <link rel="icon" href="images/Icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="general_settings.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="persönliches.css">
+        <script src="persönliches.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="persönliches.html" class="active">Persönliches</a></li>
+                    <li><a href="meine_projekte.html">Meine Projekte</a></li>
+                    <li><a href="dokumente.html">Dokumente</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="persönliches-container">
+                <section>
+                    <h1>Bisherige Praxiserfahrungen</h1>
+                    <p>Im Rahmen meines dreijährigen dualen Maschinenbaustudiums (B. Eng.) war ich in der Versuchs- und Entwicklungsabteilung der <a href="https://www.kaeser.de/" target="_blank" style="color: inherit;">KAESER KOMPRESSOREN SE</a> tätig. Hier habe ich mich mit der Optimierung von Schraubenverdichteranlagen und -blöcken beschäftigt. Dabei zählten zu meinen Aufgaben Versuche zu planen, aufzubauen, durchzuführen und auszuwerten. Auf Grundlage der Messdaten habe ich unter anderem Leistungsoptimierungen ausgearbeitet und die angepasste Steuerungssoftware validiert.</p>
+                    <p>Meine Bachelorarbeit handelt von der Leistungsoptimierung zweistufiger Schraubenkompressoren. Dazu war es erforderlich ein mathematisches Modell zu erstellen und dieses unter Zuhilfenahme von Python zu verwenden, um aus den Messdaten ein optimiertes Kennfeld eines zweistufigen Schraubenkompressors zu berechnen. Auf Grundlage dessen konnte ein Vergleich zu einem Kennfeld eines einstufigen Schraubenkompressors erfolgen.</p>
+                    <p>Zu Beginn meines dualen Studiums habe ich außerdem einen umfassenden Metallbearbeitungs-Grundkurs absolviert. Dabei lernte ich unter anderem den Umgang mit Bohr-, Dreh- und Fräsmaschinen.</p>
+                </section>
+                <section>
+                    <h1>Selbsteinschätzung meiner Fähigkeiten mit bestimmten Tools</h1>
+                    <div class="skill-container">
+                        <div class="skill-label">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-label">VBA</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 55%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-label">Matlab, Simulink</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-label">HTML, CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-label">Git</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-label">Siemens NX</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-label">Altair Inspire</div>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h1>Weitere Interessen</h1>
+                    <div class="interessen-container">   
+                        <div class="box">
+                            <div class="card">
+                                <div class="front_card front_card_1" onclick="rotateCard(this)">
+                                    <p>3D-Druck</p>
+                                </div>
+                                <div class="back_card" onclick="rotateCardback(this)">
+                                    <p>Mit meiner Leidenschaft für 3D-Druck setze ich eigene Ideen in die Realität um. Dabei handelt es sich vor allem um funktionale Bauteile, wie selbst konstruierte Prototypen oder Ersatzteile. Außerdem beschäftige ich mich mit der Modifikation meines 3D-Druckers, wie zum Beispiel dem Einbau eines gehärteten Extruder-Zahnrads, um auch abrasive Materialien drucken zu können.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="card">
+                                <div class="front_card front_card_2" onclick="rotateCard(this)">
+                                    <p>Elektronikprototyping</p>
+                                </div>
+                                <div class="back_card" onclick="rotateCardback(this)">
+                                    <p>Meine Begeisterung für Elektronikprototyping zeigt sich in der Entwicklung von Schaltungen und der Programmierung von Mikrocontrollern. Ich experimentiere mit verschiedenen Sensoren und Aktuatoren, ausgewählte Schaltungen verwirkliche ich durch das Löten auf Lochrasterplatinen.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h1>Soziales Engagement</h1>
+                    <ul class="soziales-engagement">
+                        <li>Freiwilliges Soziales Schuljahr als Schulsanitäter im Schuljahr 2018/2019</li>
+                        <li>seit 2011 aktives Mitglied im Gartenbauverein Feulersdorf</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

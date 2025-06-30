@@ -1,0 +1,122 @@
+.projekte-container {
+    padding: 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.projekte{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projekte .tab{
+    position: relative;
+    background: var(--secondary-color);
+    padding: 0 20px 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 1em;
+    overflow: hidden;
+}
+.projekte .tab input{
+    appearance: none;
+}
+.projekte .tab label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.projekte .tab label::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+}
+.projekte .tab:hover label::after{
+    color: var(--main-brand-color);
+}
+.projekte .tab input:checked ~ label::after{
+    transform: rotate(135deg);
+    color: #fff;
+}
+.projekte .tab label h4{
+    width: 40px;
+    height: 40px;
+    background: var(--main-brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.projekte .tab input:checked ~ label h4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--main-brand-color);
+    font-size: 8em;
+    justify-content: flex-end;
+}
+.projekte .tab label h5{
+    position: relative;
+    font-weight: 500;
+    color: var(--text-color);
+    z-index: 10;
+}
+.projekte .tab input:checked ~ label h5{
+    color: var(--secondary-text-color);
+}
+.projekte .tab .tab-content{
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+}
+.projekte .tab input:checked ~ .tab-content{
+    max-height: 100vh;
+}
+.projekte .tab .tab-content p{
+    position: relative;
+    padding: 10px 0;
+    color: var(--secondary-text-color);
+    z-index: 10;
+}
+.img-HM{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.img-HM img {
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.img-Fahrzeug{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+.img-Fahrzeug img {
+    width: 65%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;  
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}

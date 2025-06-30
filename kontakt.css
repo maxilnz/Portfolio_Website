@@ -1,0 +1,6 @@
+.kontakt-container {
+    padding: 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}

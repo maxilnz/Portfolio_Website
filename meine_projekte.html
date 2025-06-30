@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Maximilian Linz</title>
+        <link rel="icon" href="images/Icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="general_settings.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="meine_projekte.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="persönliches.html">Persönliches</a></li>
+                    <li><a href="meine_projekte.html" class="active">Meine Projekte</a></li>
+                    <li><a href="dokumente.html">Dokumente</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="projekte-container">
+                <section>
+                    <h1>Projekte</h1>
+                    <p>Neben zahlreichen theoretischen Arbeiten im Studium (Konstruktionsentwürfe, Simulationen, etc.) sowie praxisbezogenen Projekten bei meinem früheren Arbeitgeber, haben mich besonders einige weitere, praxisnahe Vorhaben fasziniert. Diese enstanden teils im Rahmen meines Studiums, teils aus Eigeninitiative in meiner Freizeit. Im Folgenden möchte ich Ihnen einen Einblick in fünf ausgewählte Projekte geben, die mir besonders wichtig sind und meine Interessen hervorheben.</p>
+                </section>
+            <div class="projekte">
+                <div class="tab">
+                    <input type="radio" name="tab" id="tab1">
+                    <label for="tab1">
+                        <h4>01</h4>
+                        <h5>Kettenfahrzeug (Studium)</h5>
+                    </label>
+                    <div class="tab-content">
+                        <p>
+                            Die Aufgabe war es, ein Fahrzeug zu entwickeln und zu realisieren, das sowohl ferngesteuert gegen andere Fahrzeuge antreten als auch autonom durch einen unbekannten Parcours fahren kann. In einem Team aus insgesamt acht Studenten habe ich gemeinsam mit zwei Kommilitonen die gesamte Programmierung übernommen. Diese erfolgte in Python und wurde auf einem Raspberry Pi ausgeführt. Auch wenn der autonome Modus eher rudimentär blieb und der Parcours nicht fehlerfrei durchfahren wurde, war das Endergebnis zufriedenstellend - insbesondere angesichts der geringen Erfahrung, die wir im 3. Semesters unseres Bachelorstudiums zu diesem Zeitpunkt hatten.
+                        </p>
+                        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+                            <iframe src="https://youtube.com/embed/AFG0xShw51s?si=6sa6nlmJVH8BqIBu&autoplay=1&mute=1&loop=1&playlist=AFG0xShw51s" frameborder="0" allowfullscreen allow="autoplay, encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" name="tab" id="tab2">
+                    <label for="tab2">
+                        <h4>02</h4>
+                        <h5>Portfolio-Website (in Eigeninitiative) - nicht vergessen code in repository zu aktualisieren</h5>
+                    </label>
+                    <div class="tab-content">
+                        <p>
+                            Diese Portfolio-Website wurde vollständig in Eigenarbeit mithilfe von HTML, CSS und JavaScript umgesetzt. Die dafür notwendigen Fertigkeiten habe ich 2024 im Rahmen eines umfangreichen Online-Kurses bei <a href="https://www.freecodecamp.org/" target="_blank" style="color: inherit;">freecodecamp</a> erworben. Besonders wichtig war mir dabei ein sauberer und klar strukturierter Code. Überzeugen Sie sich gerne selbst davon auf meinem <a href="https://github.com/maxilnz?tab=repositories" target="_blank" style="color: inherit;">Github</a>. 
+                        </p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" name="tab" id="tab3">
+                    <label for="tab3">
+                        <h4>03</h4>
+                        <h5>HeatMaster (Studium)</h5>
+                    </label>
+                    <div class="tab-content">
+                        <p>
+                            Wie Sie vielleicht schon auf meinem <a href="https://github.com/maxilnz?tab=repositories" target="_blank" style="color: inherit;">Github</a> gesehen haben, habe ich außer meiner Portfolio-Website auch eine Produkt-Website für den sog. HeatMaster geschrieben. HeatMaster wurde im Rahmen eines Studienprojekts entwickelt. Dabei handelt es sich um einen Hochtemperatur-Grill (bis zu 800°C), der durch seinen drehbaren Brenner auch als Pizza-Ofen verwendet werden kann. Bei dieser umfangreichen Gruppenarbeit lag mein Aufgabenbereich vor allem bei der Erstellung der Website aber auch bei der Unterstützung von Konstruktionsaufgaben in Siemens NX.
+                        </p>
+                        <div class="img-HM">
+                            <img src="images/HeatMaster_Front.png" alt="HeatMaster Ansicht 1">
+                            <img src="images/HeatMaster_Back.png" alt="HeatMaster Ansicht 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" name="tab" id="tab4">
+                    <label for="tab4">
+                        <h4>04</h4>
+                        <h5>Ferngesteuertes Fahrzeug (in Eigeninitiative)</h5>
+                    </label>
+                    <div class="tab-content">
+                        <p>
+                            In diesem noch in der Ausarbeitung befindlichen Projekt habe ich es mir zum Ziel gesetzt, ein ferngesteuertes Fahrzeug vollständig eigenständig zu entwickeln und umzusetzen. Anders als beim Kettenfahrzeug, an dem ich im Rahmen meines Studiums im Team beteiligt war, stelle ich mich dieser Aufgabe diesmal alleine. Sämtliche Schaltungen wurden von mir selbst entworfen und auf Lochrasterplatinen umgesetzt. Der Code zur Steuerung des Fahrzeugs wird auf einem Arduino ausgeführt. Zusätzlich entwerfe ich auch die Schaltung für die dazugehörige Fernsteuerung.<br> Die Elektronik ist bereits vollständig entworfen und wird aktuell gelötet. Die Programmierung ist ebenso nahezu abgeschlossen. Als letzter Schritt steht noch die mechanische Konstruktion in CAD an.
+                        </p>
+                        <div class="img-Fahrzeug">
+                            <img src="images/Platine.PNG" alt="Lochrasterplatine">
+                        </div>
+                        <p>
+                            Auf der Platine befindet sich die Schaltung zur Spannungsversorgung des Arduinos, der Motoren sowie der Motortreiber um beide Motoren ansteuern zu können (die Verbindungskabel zwischen Arduino und Motortreiber wurden aus Gründen der Übersichtlichkeit für das Bild entfernt).
+                        </p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input type="radio" name="tab" id="tab5">
+                    <label for="tab5">
+                        <h4>05</h4>
+                        <h5>Lokaler Home-Server (in Eigeninitiative)</h5>
+                    </label>
+                    <div class="tab-content">
+                        <p>
+                            In diesem eher kleineren Projekt habe ich es mir zur Aufgabe gemacht, auf einem nicht mehr benötigten Laptop einen lokalen Home-Server einzurichten, um Dateien schnell und unkompliziert im gesamten Heimnetzwerk teilen zu können. Dazu habe ich zunächst Ubuntu Server LTS installiert und konfiguriert. Danach war es notwendig im Router eine feste IP-Adresse für den Server zu reservieren, damit dieser jederzeit im Netzwerk erreichbar bleibt. Die Kommunikation mit dem Server erfolgt über SSH, wodurch eine einfache Fernadministration möglich ist. Durch die Einrichtung eines Samba-Dienstes kann schlussendlich von jedem Gerät im Heimnetzwerk auf die Verzeichnisse des Servers zugegriffen werden.   
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+    </body>
+</html>
